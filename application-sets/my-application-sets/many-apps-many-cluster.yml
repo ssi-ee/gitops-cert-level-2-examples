@@ -29,6 +29,7 @@ spec:
         namespace: '{{path.basename}}'
   syncPolicy:
     automated:
+      prune: true
       selfHeal: true
     syncOptions:     # Sync options which modifies sync behavior
     - Validate=false # disables resource validation (equivalent to 'kubectl apply --validate=true')
